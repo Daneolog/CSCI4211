@@ -20,13 +20,10 @@
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".HeartRateActivity"/>
         <activity android:name=".StepCountActivity"/>
-        <activity android:name=".DashboardActivity">
-        </activity>
-        <activity android:name=".BreathingActivity">
-        </activity>
-        <activity android:name=".ExerciseActivity">
-        </activity>
-        <activity android:name=".StepCountHistoryActivity">
+        <activity android:name=".DashboardActivity"/>
+        <activity android:name=".BreathingActivity"/>
+        <activity android:name=".StepCountHistoryActivity"/>
+        <activity android:name=".JournalActivity">
         </activity>
     </application>
 

@@ -19,7 +19,7 @@ public class DashboardActivity extends AppCompatActivity {
         Button heartRate = (Button)findViewById(R.id.heartRateButton);
         Button stepCount = (Button)findViewById(R.id.stepCountButton);
         Button breathing = (Button)findViewById(R.id.breathingButton);
-        Button exercise = (Button)findViewById(R.id.exerciseButton);
+        Button journal = (Button)findViewById(R.id.journalButton);
 
         heartRate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,10 +45,10 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        exercise.setOnClickListener(new View.OnClickListener() {
+        journal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent segue = new Intent(context, ExerciseActivity.class);
+                Intent segue = new Intent(context, JournalActivity.class);
                 startActivity(segue);
             }
         });

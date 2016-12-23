@@ -28,12 +28,25 @@
         android:textSize="30dp"
         android:textAlignment="center"/>
 
-    <ProgressBar
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
+        android:id="@+id/heartRate"
+        android:editable="true"
+        android:textAlignment="center"
+        android:text="..."
+        android:textSize="30dp"
+        android:textIsSelectable="false"
         android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"/>
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Write to server"
+        android:id="@+id/writeHeartRate"
+        android:textSize="20dp"
+        android:layout_below="@+id/heartRate"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>

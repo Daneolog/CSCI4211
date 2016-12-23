@@ -31,7 +31,6 @@ public class SignInActivity extends AppCompatActivity {
         Button signUp = (Button)findViewById(R.id.gotoSignUp);
 
         try { socket = IO.socket("http://10.134.148.217:3000"); }
-//        try { socket = IO.socket("http://192.168.0.16:3000"); }
         catch (URISyntaxException e) {}
         socket.connect();
 

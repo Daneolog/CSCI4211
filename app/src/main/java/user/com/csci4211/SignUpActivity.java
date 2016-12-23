@@ -42,10 +42,14 @@ public class SignUpActivity extends AppCompatActivity {
                 EditText password = (EditText)findViewById(R.id.signUpPassword);
                 EditText confirm = (EditText)findViewById(R.id.signUpConfirm);
 
+                boolean confirmation = password.getText().toString().equals(confirm.getText().toString());
 
-
+                if (confirmation) {
                     socket.emit("signup", username.getText().toString() + '|' + password.getText().toString());
                     socket.on("signUpResult", listener);
+                } else {
+                    Toast.makeText(context, "Hmm... make sure that you have no special characters and that your password is the same as your confirmation.", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

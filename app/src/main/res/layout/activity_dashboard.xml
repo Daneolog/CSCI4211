@@ -132,17 +132,17 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView6"
-        android:src="@drawable/exercise"
-        android:layout_toEndOf="@+id/view"
+        android:id="@+id/imageView10"
         android:layout_below="@+id/view2"
-        android:layout_toRightOf="@+id/view"/>
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view"
+        android:src="@drawable/journal"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:id="@+id/exerciseButton"
+        android:id="@+id/journalButton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -154,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Exercise"
+        android:text="Journal"
         android:id="@+id/textView4"
         android:gravity="center"
         android:layout_alignParentBottom="true"
